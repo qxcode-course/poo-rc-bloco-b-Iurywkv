@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-21_13-38-35",
+            "content": "@@ -310,14 +310,8 @@\n nt(%22\n-Fail: \n tama\n@@ -328,13 +328,14 @@\n do, \n-tente\n+apenas\n  PP,\n@@ -343,18 +343,17 @@\n ,M,G,GG \n-ou\n+e\n  XG%22)%0A  \n@@ -362,27 +362,17 @@\n     \n-else: %0A    \n+%0A\n         \n self\n@@ -371,334 +371,43 @@\n     \n-s\n el\n-f.roupa = tamanho%0A%0Aroupa = Roupa()%0Awhile True:%0A     line: str = input()%0A    print(%22$%22 + line)%0A    args: list%5Bstr%5D = line.split()%0A    if args%5B0%5D == %22show%22:%0A        print(f%22size: (%7Broupa.getTamanho()%7D)%22)%0A    if args%5B0%5D == %22size%22:%0A        tamanho = args%5B1%5D%0A        roupa.setTamanho(tamanho)%0A    if args%5B0%5D == %22end%22:%0A        breakr\n+se: %0A            self.roupa = tamanho\n",
+            "lines": "13"
+        },
+        {
+            "label": "2025-10-21_13-45-05",
+            "content": "@@ -202,19 +202,18 @@\n o!=%22PP%22 \n-and\n+or\n  tamanho\n@@ -218,19 +218,18 @@\n ho!=%22P%22 \n-and\n+or\n  tamanho\n@@ -251,19 +251,18 @@\n ho!=%22G%22 \n-and\n+or\n  tamanho\n@@ -310,19 +310,21 @@\n nt(%22\n-f\n+F\n ail: \n-Valor\n+tamanho\n  inv\n@@ -343,18 +343,14 @@\n  PP,\n- \n P,\n- \n M,\n- \n G,\n- \n GG o\n@@ -384,26 +384,24 @@\n        self.\n-__\n roupa = tama\n@@ -433,16 +433,17 @@\n e True:%0A\n+ \n     line\n@@ -712,8 +712,9 @@\n    break\n+r\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-21_13-57-32",
+            "content": "@@ -414,64 +414,8 @@\n anho\n-%0A            print(%22Comprada roupa do tamanho%22, tamanho)\n %0A%0Aro\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-21_13-59-36",
+            "content": "@@ -328,9 +328,9 @@\n  inv\n-%C3%A1\n+a\n lido\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-21_14-01-02",
+            "content": "@@ -410,16 +410,72 @@\n  tamanho\n+%0A            print(%22Comprada roupa do tamanho%22, tamanho)\n %0A%0Aroupa \n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-21_14-01-39",
+            "content": "class Roupa:\n    def __init__(self):\n        self.__roupa: str = \"\"  \n    \n    def getTamanho(self) -> str:\n        return self.__roupa\n        \n    def setTamanho(self, tamanho:str):\n        if tamanho!=\"PP\" and tamanho!=\"P\" and tamanho!=\"M\" and tamanho!=\"G\" and tamanho!=\"GG\" and tamanho!=\"XG\":\n            print(\"fail: Valor inv\u00e1lido, tente PP, P, M, G, GG ou XG\")\n        else: \n            self.__roupa = tamanho\n\nroupa = Roupa()\nwhile True:\n    line: str = input()\n    print(\"$\" + line)\n    args: list[str] = line.split()\n    if args[0] == \"show\":\n        print(f\"size: ({roupa.getTamanho()})\")\n    if args[0] == \"size\":\n        tamanho = args[1]\n        roupa.setTamanho(tamanho)\n    if args[0] == \"end\":\n        break",
+            "lines": "25"
+        }
+    ]
+}
