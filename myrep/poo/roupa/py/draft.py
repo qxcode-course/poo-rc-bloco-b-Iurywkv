@@ -1,14 +1,14 @@
 class Roupa:
     def __init__(self):
-        self.__roupa: str = ""  
-    
+        self.__roupa: str = ""
+
     def getTamanho(self) -> str:
-        return self.__roupa
-        
-    def setTamanho(self, tamanho:str):
-        if tamanho!="PP" and tamanho!="P" and tamanho!="M" and tamanho!="G" and tamanho!="GG" and tamanho!="XG":
+       return self.__roupa
+    
+    def setTamanho(self, tamanho: str):
+        if tamanho!= "PP" and tamanho!= "P" and tamanho!= "M" and tamanho!= "G" and tamanho!= "GG" and tamanho!= "XG":
             print("fail: Valor inválido, tente PP, P, M, G, GG ou XG")
-        else: 
+        else:
             self.__roupa = tamanho
 
 roupa = Roupa()

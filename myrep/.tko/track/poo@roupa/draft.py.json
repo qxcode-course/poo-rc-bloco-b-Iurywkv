@@ -27,7 +27,62 @@
         },
         {
             "label": "2025-10-21_14-01-39",
-            "content": "class Roupa:\n    def __init__(self):\n        self.__roupa: str = \"\"  \n    \n    def getTamanho(self) -> str:\n        return self.__roupa\n        \n    def setTamanho(self, tamanho:str):\n        if tamanho!=\"PP\" and tamanho!=\"P\" and tamanho!=\"M\" and tamanho!=\"G\" and tamanho!=\"GG\" and tamanho!=\"XG\":\n            print(\"fail: Valor inv\u00e1lido, tente PP, P, M, G, GG ou XG\")\n        else: \n            self.__roupa = tamanho\n\nroupa = Roupa()\nwhile True:\n    line: str = input()\n    print(\"$\" + line)\n    args: list[str] = line.split()\n    if args[0] == \"show\":\n        print(f\"size: ({roupa.getTamanho()})\")\n    if args[0] == \"size\":\n        tamanho = args[1]\n        roupa.setTamanho(tamanho)\n    if args[0] == \"end\":\n        break",
+            "content": "@@ -28,16 +28,17 @@\n __(self)\n+:\n %0A       \n@@ -60,17 +60,23 @@\n str = %22%22\n-%0A\n+  %0A    \n %0A    def\n@@ -108,16 +108,17 @@\n %0A       \n+ \n return s\n@@ -129,24 +129,28 @@\n __roupa%0A    \n+  \n+  \n %0A    def set\n@@ -161,16 +161,22 @@\n nho(\n+self, \n tamanho:\n  str\n@@ -171,17 +171,16 @@\n tamanho:\n- \n str):%0A  \n@@ -197,17 +197,16 @@\n amanho!=\n- \n %22PP%22 and\n@@ -215,17 +215,16 @@\n amanho!=\n- \n %22P%22 and \n@@ -232,17 +232,16 @@\n amanho!=\n- \n %22M%22 and \n@@ -249,17 +249,16 @@\n amanho!=\n- \n %22G%22 and \n@@ -266,17 +266,16 @@\n amanho!=\n- \n %22GG%22 and\n@@ -284,17 +284,16 @@\n amanho!=\n- \n %22XG%22:%0A  \n@@ -374,16 +374,17 @@\n    else:\n+ \n %0A       \n@@ -438,19 +438,22 @@\n ile True\n-()%0A\n+:%0A    \n line: st\n@@ -464,16 +464,20 @@\n input()%0A\n+    \n print(%22$\n@@ -486,16 +486,20 @@\n + line)%0A\n+    \n args: li\n@@ -521,16 +521,20 @@\n split()%0A\n+    \n if args%5B\n@@ -547,24 +547,28 @@\n %22show%22:%0A    \n+   \n+ \n print(f%22size\n@@ -594,16 +594,20 @@\n o()%7D)%22)%0A\n+    \n if args%5B\n@@ -624,16 +624,20 @@\n e%22:%0A    \n+ \n+   \n tamanho \n@@ -650,16 +650,20 @@\n %5B1%5D%0A    \n+  \n+  \n roupa.se\n@@ -680,16 +680,20 @@\n amanho)%0A\n+    \n if args%5B\n@@ -705,16 +705,20 @@\n  %22end%22:%0A\n+    \n     brea\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-21_14-15-12",
+            "content": "@@ -28,17 +28,16 @@\n __(self)\n-:\n %0A       \n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-21_14-15-26",
+            "content": "@@ -429,17 +429,16 @@\n e True()\n-:\n %0Aline: s\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-21_14-15-36",
+            "content": "@@ -436,16 +436,17 @@\n ):%0Aline:\n+ \n str = in\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-21_14-16-22",
+            "content": "@@ -435,18 +435,13 @@\n ():%0A\n-    \n line:\n- \n str \n@@ -450,20 +450,16 @@\n input()%0A\n-    \n print(%22$\n@@ -468,20 +468,16 @@\n + line)%0A\n-    \n args: li\n@@ -499,20 +499,16 @@\n split()%0A\n-    \n if args%5B\n@@ -564,20 +564,16 @@\n o()%7D)%22)%0A\n-    \n if args%5B\n@@ -586,16 +586,16 @@\n %22size%22:%0A\n+\n     tama\n@@ -638,20 +638,16 @@\n amanho)%0A\n-    \n if args%5B\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-21_14-17-12",
+            "content": "@@ -150,14 +150,8 @@\n nho(\n-self, \n tama\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-21_14-17-40",
+            "content": "@@ -437,16 +437,20 @@\n True():%0A\n+    \n line: st\n@@ -461,16 +461,20 @@\n input()%0A\n+    \n print(%22$\n@@ -483,16 +483,20 @@\n + line)%0A\n+    \n args: li\n@@ -518,16 +518,20 @@\n split()%0A\n+    \n if args%5B\n@@ -587,16 +587,20 @@\n o()%7D)%22)%0A\n+    \n if args%5B\n@@ -613,16 +613,16 @@\n %22size%22:%0A\n-\n     tama\n@@ -665,16 +665,20 @@\n amanho)%0A\n+    \n if args%5B\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-21_14-18-27",
+            "content": "@@ -437,20 +437,16 @@\n True():%0A\n-    \n line: st\n@@ -457,20 +457,16 @@\n input()%0A\n-    \n print(%22$\n@@ -475,20 +475,16 @@\n + line)%0A\n-    \n args: li\n@@ -506,20 +506,16 @@\n split()%0A\n-    \n if args%5B\n@@ -571,20 +571,16 @@\n o()%7D)%22)%0A\n-    \n if args%5B\n@@ -593,16 +593,16 @@\n %22size%22:%0A\n+\n     tama\n@@ -645,20 +645,16 @@\n amanho)%0A\n-    \n if args%5B\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-21_14-20-19",
+            "content": "@@ -544,16 +544,20 @@\n %22show%22:%0A\n+    \n print(f%22\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-21_14-20-38",
+            "content": "@@ -433,16 +433,18 @@\n ile True\n+()\n :%0A    li\n@@ -544,20 +544,16 @@\n %22show%22:%0A\n-    \n print(f%22\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-21_14-21-23",
+            "content": "@@ -542,20 +542,16 @@\n %22show%22:%0A\n-    \n     prin\n@@ -611,20 +611,16 @@\n %22size%22:%0A\n-    \n     tama\n@@ -633,20 +633,16 @@\n args%5B1%5D%0A\n-    \n     roup\n@@ -688,20 +688,16 @@\n  %22end%22:%0A\n-    \n     brea\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-21_14-22-11",
+            "content": "class Roupa:\n    def __init__(self):\n        self.__roupa: str = \"\"\n\n    def getTamanho(self) -> str:\n       return self.__roupa\n    \n    def setTamanho(self, tamanho: str):\n        if tamanho!= \"PP\" and tamanho!= \"P\" and tamanho!= \"M\" and tamanho!= \"G\" and tamanho!= \"GG\" and tamanho!= \"XG\":\n            print(\"fail: Valor inv\u00e1lido, tente PP, P, M, G, GG ou XG\")\n        else:\n            self.__roupa = tamanho\n\nroupa = Roupa()\nwhile True:\n    line: str = input()\n    print(\"$\" + line)\n    args: list[str] = line.split()\n    if args[0] == \"show\":\n        print(f\"size: ({roupa.getTamanho()})\")\n    if args[0] == \"size\":\n        tamanho = args[1]\n        roupa.setTamanho(tamanho)\n    if args[0] == \"end\":\n        break",
             "lines": "25"
         }
     ]
